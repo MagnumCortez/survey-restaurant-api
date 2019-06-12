@@ -1,0 +1,16 @@
+D:\Projetcs\Restaurant\Restaurant.BLL\bin\Debug\netstandard2.0\Restaurant.BLL.deps.json
+D:\Projetcs\Restaurant\Restaurant.BLL\bin\Debug\netstandard2.0\Restaurant.BLL.dll
+D:\Projetcs\Restaurant\Restaurant.BLL\bin\Debug\netstandard2.0\Restaurant.BLL.pdb
+D:\Projetcs\Restaurant\Restaurant.BLL\bin\Debug\netstandard2.0\Restaurant.BLL.Infra.dll
+D:\Projetcs\Restaurant\Restaurant.BLL\bin\Debug\netstandard2.0\Restaurant.DAL.Infra.dll
+D:\Projetcs\Restaurant\Restaurant.BLL\bin\Debug\netstandard2.0\Restaurant.Entities.dll
+D:\Projetcs\Restaurant\Restaurant.BLL\bin\Debug\netstandard2.0\Restaurant.BLL.Infra.pdb
+D:\Projetcs\Restaurant\Restaurant.BLL\bin\Debug\netstandard2.0\Restaurant.DAL.Infra.pdb
+D:\Projetcs\Restaurant\Restaurant.BLL\bin\Debug\netstandard2.0\Restaurant.Entities.pdb
+D:\Projetcs\Restaurant\Restaurant.BLL\obj\Debug\netstandard2.0\Restaurant.BLL.csprojAssemblyReference.cache
+D:\Projetcs\Restaurant\Restaurant.BLL\obj\Debug\netstandard2.0\Restaurant.BLL.csproj.CoreCompileInputs.cache
+D:\Projetcs\Restaurant\Restaurant.BLL\obj\Debug\netstandard2.0\Restaurant.BLL.AssemblyInfoInputs.cache
+D:\Projetcs\Restaurant\Restaurant.BLL\obj\Debug\netstandard2.0\Restaurant.BLL.AssemblyInfo.cs
+D:\Projetcs\Restaurant\Restaurant.BLL\obj\Debug\netstandard2.0\Restaurant.BLL.csproj.CopyComplete
+D:\Projetcs\Restaurant\Restaurant.BLL\obj\Debug\netstandard2.0\Restaurant.BLL.dll
+D:\Projetcs\Restaurant\Restaurant.BLL\obj\Debug\netstandard2.0\Restaurant.BLL.pdb

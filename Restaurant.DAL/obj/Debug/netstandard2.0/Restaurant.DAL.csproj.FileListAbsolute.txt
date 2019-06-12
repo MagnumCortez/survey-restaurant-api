@@ -1,0 +1,14 @@
+D:\Projetcs\Restaurant\Restaurant.DAL\bin\Debug\netstandard2.0\Restaurant.DAL.deps.json
+D:\Projetcs\Restaurant\Restaurant.DAL\bin\Debug\netstandard2.0\Restaurant.DAL.dll
+D:\Projetcs\Restaurant\Restaurant.DAL\bin\Debug\netstandard2.0\Restaurant.DAL.pdb
+D:\Projetcs\Restaurant\Restaurant.DAL\bin\Debug\netstandard2.0\Restaurant.DAL.Infra.dll
+D:\Projetcs\Restaurant\Restaurant.DAL\bin\Debug\netstandard2.0\Restaurant.Entities.dll
+D:\Projetcs\Restaurant\Restaurant.DAL\bin\Debug\netstandard2.0\Restaurant.DAL.Infra.pdb
+D:\Projetcs\Restaurant\Restaurant.DAL\bin\Debug\netstandard2.0\Restaurant.Entities.pdb
+D:\Projetcs\Restaurant\Restaurant.DAL\obj\Debug\netstandard2.0\Restaurant.DAL.csprojAssemblyReference.cache
+D:\Projetcs\Restaurant\Restaurant.DAL\obj\Debug\netstandard2.0\Restaurant.DAL.csproj.CoreCompileInputs.cache
+D:\Projetcs\Restaurant\Restaurant.DAL\obj\Debug\netstandard2.0\Restaurant.DAL.AssemblyInfoInputs.cache
+D:\Projetcs\Restaurant\Restaurant.DAL\obj\Debug\netstandard2.0\Restaurant.DAL.AssemblyInfo.cs
+D:\Projetcs\Restaurant\Restaurant.DAL\obj\Debug\netstandard2.0\Restaurant.DAL.csproj.CopyComplete
+D:\Projetcs\Restaurant\Restaurant.DAL\obj\Debug\netstandard2.0\Restaurant.DAL.dll
+D:\Projetcs\Restaurant\Restaurant.DAL\obj\Debug\netstandard2.0\Restaurant.DAL.pdb
