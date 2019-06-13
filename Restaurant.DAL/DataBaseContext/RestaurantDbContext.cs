@@ -35,5 +35,8 @@ namespace Restaurant.DAL.DataBaseContext
 
         public DbSet<Survey> Survey { get; set; }
         public IQueryable<Survey> QuerySurvey { get { return Survey; } }
+
+        public DbSet<SurveyWinners> SurveyWinners { get; set; }
+        public IQueryable<SurveyWinners> QuerySurveyWinners { get { return SurveyWinners; } }
     }
 }

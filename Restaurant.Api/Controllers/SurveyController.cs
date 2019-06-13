@@ -114,5 +114,53 @@ namespace Restaurant.Api.Controllers
 
             return Ok(response);
         }
+
+        /// <summary>
+        /// RETORNA O RESULTADO O RESTAURANTE VENCEDOR DA ENQUETE DO DIA ATUAL
+        /// </summary>
+        /// <param name=""></param>
+        /// <returns>OBJETO RESPONSE</returns>
+        [Route("api/[controller]/day/result"), HttpGet]
+        public async Task<IActionResult> GetSurveyWinner()
+        {
+            var response = new ResponseContent();
+            try
+            {
+                response.Object = await _surveyUoW.surveyBLL.GetSurveyWinnerAsync();
+                response.Message = "Requisição realizada com sucesso.";
+                response.Status = true;
+            }
+            catch (Exception ex)
+            {
+                response.Message = ex.Message;
+                response.Status = false;
+            }
+
+            return Ok(response);
+        }
+
+        /// <summary>
+        /// RETORNA O RESULTADO O RESTAURANTE VENCEDOR DA ENQUETE DO DIA ATUAL
+        /// </summary>
+        /// <param name=""></param>
+        /// <returns>OBJETO RESPONSE</returns>
+        [Route("api/[controller]/finish"), HttpPost]
+        public async Task<IActionResult> PostSurveyFinish()
+        {
+            var response = new ResponseContent();
+            try
+            {
+                response.Object = await _surveyUoW.surveyBLL.PostSurveyFinishAsync();
+                response.Message = "Requisição realizada com sucesso.";
+                response.Status = true;
+            }
+            catch (Exception ex)
+            {
+                response.Message = ex.Message;
+                response.Status = false;
+            }
+
+            return Ok(response);
+        }
     }
 }

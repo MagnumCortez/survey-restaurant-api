@@ -122,6 +122,54 @@ namespace Restaurant.BLL
             }
         }
 
+        /// <summary>
+        /// MÉTDODO RESPONSÁVEL PELA VALIDAÇÃO PARA RETORNO DE RESTAURANTE VENCEDOR DO DIA ATUAL
+        /// </summary>
+        /// <param name=""></param>
+        /// <returns>OBJETO</returns>
+        public async Task<Object> GetSurveyWinnerAsync()
+        {
+            try
+            {
+                var surveyWinner = await _surveyRepository.GetSurveyWinnerAsync();
+
+                if (surveyWinner  == null)
+                {
+                    throw new Exception("Enquente ainda não foi finalizada");
+                }
+
+                return surveyWinner;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        /// <summary>
+        /// MÉTDODO RESPONSÁVEL PELA VALIDAÇÃO PARA FINALIZAÇÃO DE ENQUETE DO DIA ATUAL
+        /// </summary>
+        /// <param name=""></param>
+        /// <returns>OBJETO</returns>
+        public async Task<SurveyWinners> PostSurveyFinishAsync()
+        {
+            try
+            {
+                var surveyfinished = await _surveyRepository.PostSurveyFinishAsync();
+
+                if (surveyfinished == null)
+                {
+                    throw new Exception("Não foi possível finalizar Enquente");
+                }
+
+                return surveyfinished;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
         private static void ValidateSurveyTime()
         {
             //Setando Atributos de debugar em outro período
@@ -135,7 +183,7 @@ namespace Restaurant.BLL
 
             if (DateTime.Now.TimeOfDay > new TimeSpan(HourClosing, 00, 00))
             {
-                throw new Exception("Votação encerrada!");
+                //throw new Exception("Votação encerrada!");
             }
         }
 

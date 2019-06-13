@@ -8,5 +8,6 @@ namespace Restaurant.DAL.Infra
         IQueryable<Student> QueryStudent { get; }
         IQueryable<Entities.Restaurant> QueryRestaurant { get; }
         IQueryable<Survey> QuerySurvey { get; }
+        IQueryable<SurveyWinners> QuerySurveyWinners { get; }
     }
 }

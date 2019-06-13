@@ -11,5 +11,7 @@ namespace Restaurant.BLL.Infra
         Task<Survey> PostSurveyAsync(Survey survey);
         Task<Survey> PutSurveyAsync(Survey survey);
         Task<List<Object>> GetSurveyResultPartialAsync();
+        Task<Object> GetSurveyWinnerAsync();
+        Task<SurveyWinners> PostSurveyFinishAsync();
     }
 }
