@@ -1,8 +1,0 @@
-D:\Projetcs\Restaurant\Restaurant.Helpers\bin\Debug\netstandard2.0\Restaurant.Helpers.deps.json
-D:\Projetcs\Restaurant\Restaurant.Helpers\bin\Debug\netstandard2.0\Restaurant.Helpers.dll
-D:\Projetcs\Restaurant\Restaurant.Helpers\bin\Debug\netstandard2.0\Restaurant.Helpers.pdb
-D:\Projetcs\Restaurant\Restaurant.Helpers\obj\Debug\netstandard2.0\Restaurant.Helpers.csproj.CoreCompileInputs.cache
-D:\Projetcs\Restaurant\Restaurant.Helpers\obj\Debug\netstandard2.0\Restaurant.Helpers.AssemblyInfoInputs.cache
-D:\Projetcs\Restaurant\Restaurant.Helpers\obj\Debug\netstandard2.0\Restaurant.Helpers.AssemblyInfo.cs
-D:\Projetcs\Restaurant\Restaurant.Helpers\obj\Debug\netstandard2.0\Restaurant.Helpers.dll
-D:\Projetcs\Restaurant\Restaurant.Helpers\obj\Debug\netstandard2.0\Restaurant.Helpers.pdb

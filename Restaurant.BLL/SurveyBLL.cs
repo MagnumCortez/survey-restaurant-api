@@ -145,6 +145,31 @@ namespace Restaurant.BLL
                 throw ex;
             }
         }
+        
+
+        /// <summary>
+        /// MÉTDODO RESPONSÁVEL PELA VALIDAÇÃO PARA RETORNO OS RESTAURANTES VENCEDORES DA SEMANA
+        /// </summary>
+        /// <param name=""></param>
+        /// <returns>OBJETO</returns>
+        public async Task<List<Object>> GetWeeklySurveyWinnersAsync()
+        {
+            try
+            {
+                var weeklywinners = await _surveyRepository.GetWeeklySurveyWinnersAsync();
+
+                if (weeklywinners == null)
+                {
+                    throw new Exception("Ainda não temos nehum restaurante sorteado na semana");
+                }
+
+                return weeklywinners;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
 
         /// <summary>
         /// MÉTDODO RESPONSÁVEL PELA VALIDAÇÃO PARA FINALIZAÇÃO DE ENQUETE DO DIA ATUAL
@@ -174,7 +199,7 @@ namespace Restaurant.BLL
         {
             //Setando Atributos de debugar em outro período
             int HourOpenning = 10;
-            int HourClosing = 23;
+            int HourClosing = 12;
 
             if (DateTime.Now.TimeOfDay < new TimeSpan(HourOpenning, 00, 00))
             {

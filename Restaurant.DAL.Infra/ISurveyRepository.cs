@@ -12,6 +12,7 @@ namespace Restaurant.DAL.Infra
         Task<Survey> PutSurveyAsync(Survey survey);
         Task<List<Object>> GetSurveyResultPartialAsync();
         Task<Object> GetSurveyWinnerAsync();
+        Task<List<Object>> GetWeeklySurveyWinnersAsync();
         Task<SurveyWinners> PostSurveyFinishAsync();
     }
 }

@@ -144,6 +144,30 @@ namespace Restaurant.Api.Controllers
         /// </summary>
         /// <param name=""></param>
         /// <returns>OBJETO RESPONSE</returns>
+        [Route("api/[controller]/week/result"), HttpGet]
+        public async Task<IActionResult> GetWeekSurveyWinners()
+        {
+            var response = new ResponseContent();
+            try
+            {
+                response.Object = await _surveyUoW.surveyBLL.GetWeeklySurveyWinnersAsync();
+                response.Message = "Requisição realizada com sucesso.";
+                response.Status = true;
+            }
+            catch (Exception ex)
+            {
+                response.Message = ex.Message;
+                response.Status = false;
+            }
+
+            return Ok(response);
+        }
+
+        /// <summary>
+        /// RETORNA O RESULTADO O RESTAURANTE VENCEDOR DA ENQUETE DO DIA ATUAL
+        /// </summary>
+        /// <param name=""></param>
+        /// <returns>OBJETO RESPONSE</returns>
         [Route("api/[controller]/finish"), HttpPost]
         public async Task<IActionResult> PostSurveyFinish()
         {
