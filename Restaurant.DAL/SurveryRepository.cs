@@ -83,7 +83,13 @@ namespace Restaurant.DAL
             {
                 int totalVotes = await GetTotalVotesAsync();
 
-                return await _dbContext.QuerySurvey.Where(x => x.SRV_DATE.Date == DateTime.Now.Date).GroupBy(x => x.SRV_RESTAURANT_ID).Select(x => new { SRV_RESTAURANT_ID = x.Key, VOTES = x.Count(), TOTAL = totalVotes }).AsNoTracking().ToListAsync<Object>();
+                return await _dbContext.QuerySurvey
+                                    .Where(x => x.SRV_DATE.Date == DateTime.Now.Date)
+                                    .GroupBy(x => x.SRV_RESTAURANT_ID)
+                                    .Select(x => new { SRV_RESTAURANT_ID = x.Key, VOTES = x.Count(), TOTAL = totalVotes })
+                                    .Join(_dbContext.QueryRestaurant, x => x.SRV_RESTAURANT_ID, y => y.RES_IDENTI, (VOTING, RESTAURANT) => new { VOTING, RESTAURANT })
+                                    .AsNoTracking()
+                                    .ToListAsync<Object>();
             }
             catch (Exception ex)
             {
